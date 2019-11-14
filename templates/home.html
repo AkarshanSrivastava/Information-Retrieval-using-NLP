@@ -1,0 +1,59 @@
+<!Doctype html>
+
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body> 
+	<header style="color:blue;font-size:30px;font-family:calibri;text-align: center;">
+				<b></b>
+	</header>
+		<div class="container">
+		<form action="/finalresult" method="POST">  
+		<p style="color:black;font-size:20px;font-family:calibri"><b>Type Your Query</b></p>
+		<textarea name="QA" rows="1", cols="100" style="color:red;font-size:15px;font-family:calibri"></textarea>
+		<br/>
+		<input type="submit" onclick="myFunction()" value="Search" style="color:green;font-size:15px;font-family:calibri;"> 
+		<br/>
+		<br/>
+		</form>
+		</div>
+			
+		<div id="myDIV">
+		
+		<b style="padding-right: 15px;">Question: </b> {{Q1}}
+		</br>
+		<b style="padding-right: 25px;">Answer: </b> {{A1}}
+		<br/>
+		<br/>
+		<b style="padding-right: 15px;">Question: </b> {{Q2}}
+		</br>
+		<b style="padding-right: 25px;">Answer: </b> {{A2}}
+		<br/>
+		<br/>
+		<b style="padding-right: 15px;">Question: </b> {{Q3}}
+		</br>
+		<b style="padding-right: 25px;">Answer: </b> {{A3}}
+		<br/>
+		<br/>
+		<b style="padding-right: 15px;">Question: </b> {{Q4}}
+		</br>
+		<b style="padding-right: 25px;">Answer: </b> {{A4}}
+		<br/>
+		<br/>
+		<b style="padding-right: 15px;">Question: </b> {{Q5}}
+		</br>
+		<b style="padding-right: 25px;">Answer: </b> {{A5}}
+		</div>
+<script>
+function myFunction() {
+var x = document.getElementById("myDIV");
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+}
+</script>
+</body>
+</html>
