@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Nov  8 15:35:40 2019
 
-@author: A Nanditha
-"""
 import json
 import pandas as pd
 '''
